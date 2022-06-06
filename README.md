@@ -1,5 +1,6 @@
 # 我的餐廳清單
 一個用Node.js和Express的簡易上手之餐廳清單
+
 ![Cover](https://github.com/BBhung/restaurant-list-r2/blob/main/restaurant-list-r2.png)
 
 ## 功能
