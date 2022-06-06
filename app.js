@@ -8,9 +8,6 @@ const exphbs = require('express-handlebars')
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
 const Restaurant = require('./models/Restaurant') 
-//const methodOverride = require('method-override') 
-//app.use(methodOverride('_method')) 
-//app.use(express.urlencoded({ extended: true}))
 
 // 引用 body-parser
 const bodyParser = require('body-parser')
