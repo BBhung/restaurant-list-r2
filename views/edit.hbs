@@ -1,6 +1,6 @@
 <h1 class="mb-1 restaurant-show-title">編輯餐廳</h1>
 <div class="container">
-  <form action="/restaurants/{{restaurantsData._id}}/edit" method="POST">
+  <form action="/restaurants/{{restaurantsData._id}}" method="POST">
     <div class="mb-2">
       <label for="name" class="form-label">中文店名</label>
       <input type="text" class="form-control" id="name" placeholder="Name" name="name" value="{{restaurantsData.name}}"
@@ -50,7 +50,7 @@
     <div class="mb-2">
       <label for="description" class="form-label">敘述</label>
       <textarea class="form-control" id="description" rows="3" name="description"
-        value="{{restaurantsData.description}}" required></textarea>
+        required>{{restaurantsData.description}}</textarea>
     </div>
     <div class="text-center">
       <button type="submit" class="btn btn-primary">Save</button>
