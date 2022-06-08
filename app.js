@@ -28,10 +28,10 @@ db.once('open', () => {
 app.use(express.static('public')) 
 
 //設定首頁路由
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   Restaurant.find()
     .lean()
-    .then(restaurantsData => res.render("index", { restaurantsData }))
+    .then(restaurantsData => res.render('index', { restaurantsData }))
     .catch(err => console.log(err))
 })
 
@@ -64,7 +64,7 @@ app.get('/restaurants/:id/edit', (req, res) => {
 })
 
 //更新餐廳資訊
-app.post('/restaurants/:id/edit', (req, res) => {
+app.post('/restaurants/:id', (req, res) => {
   const id = req.params.id
   return Restaurant.findById(id)
     .then(restaurantsData => {
