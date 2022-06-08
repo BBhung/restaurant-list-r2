@@ -17,13 +17,13 @@
 1. 開啟終端機，Clone此專案至本地電腦
 
 ```
-   https://github.com/BBhung/movie-list.git
+   https://github.com/BBhung/restaurant-list-r2.git
 ```
 
 2.  透過終端機進入資料夾
 
 ```
-cd movie-list
+cd restaurant-list-r2
 ```
 
 3. 安裝npm套件
